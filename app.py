@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request, jsonify
 from chat import get_response
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 
 
 app = Flask(__name__)
-run_with_ngrok(app)
+#run_with_ngrok(app)
 @app.route("/")
 def index_get():
     return render_template("base.html")
